@@ -155,20 +155,14 @@ customer-churn-prediction-ml
 
 ## Confusion Matrix
 
-> Add the confusion matrix image here.
-
-```
-images/confusion_matrix.png
+![Confusion Matrix](images/confusion_matrix.png)
 ```
 
 ---
 
 ## Feature Importance
 
-> Add the Top 10 Feature Importance image here.
-
-```
-images/feature_importance.png
+![Feature Importance](images/feature_importance.png)g
 ```
 
 ---
