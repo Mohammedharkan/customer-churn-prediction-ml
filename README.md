@@ -1,90 +1,128 @@
 # Customer Churn Prediction Using Machine Learning
 
-## Overview
-
-This project presents an end-to-end machine learning solution for predicting customer churn using the Telco Customer Churn dataset.
-
-The objective is to identify customers who are likely to leave a telecommunications company so that businesses can take proactive actions to improve customer retention.
-
-The project demonstrates the complete machine learning workflow, including data preprocessing, feature engineering, model training, evaluation, optimization, explainability, and deployment through an interactive interface in Google Colab.
+An end-to-end machine learning project that predicts customer churn using the Telco Customer Churn dataset. The project covers the complete machine learning workflow from data preprocessing to model deployment through an interactive prediction interface in Google Colab.
 
 ---
 
-## Problem Statement
+## Project Overview
 
-Customer churn is one of the biggest challenges faced by subscription-based businesses. Losing existing customers increases acquisition costs and reduces long-term profitability.
+Customer churn is one of the biggest challenges for subscription-based businesses. Identifying customers who are likely to leave allows companies to take proactive actions that improve customer retention and reduce revenue loss.
 
-This project builds a predictive model capable of identifying customers who are at high risk of churning before they leave.
-
----
-
-## Dataset
-
-**Dataset:** Telco Customer Churn Dataset
-
-The dataset contains customer demographic information, subscribed services, contract details, billing information, and churn status.
-
-Target variable:
-
-- **Churn**
-  - Yes
-  - No
+This project develops an optimized Random Forest classification model capable of predicting whether a customer is likely to churn based on demographic information, subscribed services, billing details, and contract information.
 
 ---
 
-## Project Workflow
+## Project Objectives
 
-### 1. Data Exploration
+- Explore and understand customer behavior.
+- Clean and preprocess the dataset.
+- Engineer meaningful features.
+- Train a machine learning classification model.
+- Optimize model performance using GridSearchCV.
+- Explain model decisions using Feature Importance.
+- Predict churn for new customers using an interactive interface.
+
+---
+
+# Machine Learning Workflow
+
+## 1. Data Exploration
+
 - Dataset inspection
 - Missing value handling
 - Exploratory Data Analysis (EDA)
-- Data visualization
+- Customer churn distribution
+- Feature relationship analysis
 
-### 2. Data Preprocessing
+---
+
+## 2. Data Preprocessing
+
 - Data cleaning
-- Feature engineering
+- Data type conversion
 - One-Hot Encoding
+- Feature Engineering
 - Train/Test Split
 
-### 3. Model Development
-- Random Forest Classifier
-- Cross Validation
-- Hyperparameter Tuning using GridSearchCV
+---
 
-### 4. Model Evaluation
+## 3. Model Development
+
+Algorithm used:
+
+- Random Forest Classifier
+
+Model optimization:
+
+- Hyperparameter Tuning
+- GridSearchCV
+- 5-Fold Cross Validation
+
+---
+
+## 4. Model Evaluation
+
+Evaluation Metrics:
+
 - Accuracy
+- Precision
+- Recall
+- F1-Score
 - Confusion Matrix
 - Classification Report
 
-### 5. Model Explainability
-- Feature Importance Analysis
-- Top 10 Most Important Features
+---
 
-### 6. Interactive Prediction
-- User-friendly prediction interface using Google Colab widgets
-- Predict customer churn for new customer information
+## 5. Model Explainability
+
+The project identifies the most influential variables affecting customer churn using Feature Importance analysis.
+
+Top important features include:
+
+- Tenure
+- Total Charges
+- Monthly Contract
+- Monthly Charges
+- Online Security
+- Technical Support
 
 ---
 
-## Results
+## 6. Interactive Prediction Interface
 
-### Initial Model
+A user-friendly interface was developed using **ipywidgets** inside Google Colab.
 
-Accuracy:
+Users can:
 
-**78.50%**
-
-### Optimized Model
-
-Accuracy after GridSearchCV:
-
-**80.62%**
-
-The optimized model demonstrated improved predictive performance through hyperparameter tuning.
+- Enter customer information
+- Select contract type
+- Click **Predict Churn**
+- Instantly receive a prediction from the optimized Random Forest model
 
 ---
 
-## Technologies Used
+# Model Performance
+
+| Metric | Result |
+|---------|--------|
+| Initial Accuracy | **78.50%** |
+| Optimized Accuracy | **80.62%** |
+| Algorithm | Random Forest |
+| Hyperparameter Optimization | GridSearchCV |
+| Cross Validation | 5-Fold |
+
+---
+
+# Key Insights
+
+- Customers with shorter tenure are more likely to churn.
+- Month-to-month contracts have a higher churn risk than long-term contracts.
+- Customers with higher monthly charges tend to have a greater probability of leaving.
+- Hyperparameter tuning improved the model accuracy from **78.50%** to **80.62%**.
+
+---
+
+# Technologies Used
 
 - Python
 - Pandas
@@ -97,46 +135,74 @@ The optimized model demonstrated improved predictive performance through hyperpa
 
 ---
 
-## Repository Structure
+# Repository Structure
 
 ```
-customer-churn-prediction-ml/
-
-│── Final_Project.ipynb
-│── Customer_Churn_Prediction_Final_Report.pdf
-│── Telco-Customer-Churn.csv
-│── README.md
+customer-churn-prediction-ml
+│
+├── Customer_Churn_Prediction.ipynb
+├── Customer_Churn_Prediction_Report.pdf
+├── Telco-Customer-Churn.csv
+├── README.md
+└── images
+    ├── confusion_matrix.png
+    └── feature_importance.png
 ```
 
 ---
 
-## Key Features
+# Project Preview
 
-- End-to-end machine learning pipeline
-- Data preprocessing and feature engineering
-- Random Forest classification
-- Hyperparameter optimization
-- Cross Validation
-- Model evaluation
-- Feature Importance visualization
-- Interactive prediction interface
+## Confusion Matrix
 
----
+> Add the confusion matrix image here.
 
-## Future Improvements
-
-- Deploy the model as a web application using Streamlit or Flask.
-- Compare multiple machine learning algorithms.
-- Perform probability calibration.
-- Integrate SHAP explainability for individual predictions.
+```
+images/confusion_matrix.png
+```
 
 ---
 
-## Author
+## Feature Importance
+
+> Add the Top 10 Feature Importance image here.
+
+```
+images/feature_importance.png
+```
+
+---
+
+# Future Improvements
+
+- Deploy the model as a Streamlit web application.
+- Compare Random Forest with XGBoost and LightGBM.
+- Add SHAP explainability for individual predictions.
+- Deploy the model using Flask or FastAPI.
+- Connect the model to a real customer database.
+
+---
+
+# Skills Demonstrated
+
+- Data Cleaning
+- Exploratory Data Analysis
+- Feature Engineering
+- Feature Encoding
+- Machine Learning
+- Model Evaluation
+- Hyperparameter Optimization
+- Model Explainability
+- Interactive Model Deployment
+
+---
+
+# Author
 
 **Mohammed Harkan**
 
 Business Intelligence Analyst Student
 
-GitHub:
+GitHub
+
 https://github.com/Mohammedharkan
