@@ -104,9 +104,9 @@ Users can:
 # Model Performance
 
 | Metric | Result |
-|---------|--------|
-| Initial Accuracy | **78.50%** |
-| Optimized Accuracy | **80.62%** |
+|--------|--------|
+| Initial Accuracy | 78.50% |
+| Optimized Accuracy | 80.62% |
 | Algorithm | Random Forest |
 | Hyperparameter Optimization | GridSearchCV |
 | Cross Validation | 5-Fold |
@@ -156,14 +156,12 @@ customer-churn-prediction-ml
 ## Confusion Matrix
 
 ![Confusion Matrix](images/confusion_matrix.png)
-```
 
 ---
 
 ## Feature Importance
 
-![Feature Importance](images/feature_importance.png)g
-```
+![Feature Importance](images/feature_importance.png)
 
 ---
 
