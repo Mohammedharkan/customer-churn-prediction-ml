@@ -189,6 +189,14 @@ customer-churn-prediction-ml
 
 ---
 
+## Interactive Prediction Interface
+
+The project includes an interactive prediction interface built with **ipywidgets**, allowing users to enter customer information and instantly receive churn predictions.
+
+![Interactive Interface](images/interactive_interface.png)
+
+---
+
 # Author
 
 **Mohammed Harkan**
