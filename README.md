@@ -1,7 +1,6 @@
 # Customer Churn Prediction Using Machine Learning
 
-An end-to-end machine learning project that predicts customer churn using the Telco Customer Churn dataset. The project covers the complete machine learning workflow from data preprocessing to model deployment through an interactive prediction interface in Google Colab.
-
+An end-to-end machine learning solution for predicting telecom customer churn using Random Forest, hyperparameter tuning, feature importance analysis, and an interactive prediction interface built with Google Colab.
 ---
 
 ## Project Overview
